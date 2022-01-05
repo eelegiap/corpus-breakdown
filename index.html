@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<head>
+    <style>
+        .axis {
+          opacity: 0.7;
+        }
+        .axis:hover {
+          opacity: 1;
+        }
+        </style>
+    <title>RNC Breakdown</title>
+</head>
+
+<body>
+    <h2>Case distribution breakdown by word (lemma).</h2>
+        <form onsubmit="return false">
+            Input any word (lemma):
+            <input type="text" value="книга" id="lemma" >
+            <input type='button' value='Update Graph' id='submit'>
+        </form>
+        <br>
+    <div id="my_dataviz"></div>
+    <br><br><br>
+</body>
+
+
+<script src='coords.js'></script>
